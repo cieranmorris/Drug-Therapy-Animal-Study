@@ -20,6 +20,8 @@ Programming dependencies and languages used within this repository: Pandas, Matp
 
 ![Reduced](Images/duplicate_drop_df.png)
 
+### Summary Statistics Tables
+
 * For an initial statstical overview, I generated a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
   * I generated a summary statistics table using Pandas' `.groupby()` method:
@@ -29,6 +31,8 @@ Programming dependencies and languages used within this repository: Pandas, Matp
   * And recreated the same summary statistics table using Matplotlib's `.aggregate()` method:
 
   ![agg](Images/agg_summary_stats.png)
+
+### Total Number of Measurements Bar Charts
 
 * I determined that a bar chart would best represent the total number of measurements taken for each treatment regimen throughout the course of the study.
 
@@ -40,6 +44,9 @@ Programming dependencies and languages used within this repository: Pandas, Matp
 
   ![pyplot](Images/pyplot_barchart.png)
 
+
+### Sex Distribution Pie Charts
+
 * In order to observe the distribution of female or male mice in the study, I generated pie plots that displayed the percentage of each sex out of the total 249 mice within the study.
 
   * This was accomplished using both Pandas's `DataFrame.plot()` method:
@@ -50,11 +57,18 @@ Programming dependencies and languages used within this repository: Pandas, Matp
 
   ![PyPlotPie](Images/pyplot_piechart.png)
 
-* Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
 
-* Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
+### Final Tumor Volume Quartiles. IQR, and Potential Outliers
 
-  **Hint**: All four box plots should be within the same figure. Use this [Matplotlib documentation page](https://matplotlib.org/gallery/pyplots/boxplot_demo_pyplot.html#sphx-glr-gallery-pyplots-boxplot-demo-pyplot-py) for help with changing the style of the outliers.
+* One key analysis within this technical report was to visualize the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. I successfully calculated the quartiles and IQR, and then quantitatively determined any potential outliers across all four treatment regimens that may skew the interpretation of our results.
+
+![Quartiles](Images/quartiles_output.png)
+
+### Final Tumor Volume Box Plots
+
+* I visualized this assessment further by generating box and whisker plots of the final tumor volume for all four treatment regimens and highlighted any potential outliers in the plot by changing their color and style. All four box and whisker plots were charted on a singular graph. 
+
+![Boxplot](Images/tumor_boxplot.png)
 
 * Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.
 
