@@ -22,21 +22,33 @@ Programming dependencies and languages used within this repository: Pandas, Matp
 
 * For an initial statstical overview, I generated a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
-  * I generated a summary statistics table using Pandas' .groupby() method:
+  * I generated a summary statistics table using Pandas' `.groupby()` method:
 
   ![groupby](Images/groupby_summary_stats.png)
 
-  * And recreated the same summary statistics table using Matplotlib's .aggregate() method:
+  * And recreated the same summary statistics table using Matplotlib's `.aggregate()` method:
 
   ![agg](Images/agg_summary_stats.png)
 
-* Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the total number of measurements taken for each treatment regimen throughout the course of the study.
+* I determined that a bar chart would best represent the total number of measurements taken for each treatment regimen throughout the course of the study.
 
-  * **NOTE:** These plots should look identical.
+  * I accomplished this using both Pandas's `DataFrame.plot()` method:
+  
+  ![Pandasplot](Images/pandas_barchart.png)
 
-* Generate a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
+  * As well as Matplotlib's `pyplot` method: 
 
-  * **NOTE:** These plots should look identical.
+  ![pyplot](Images/pyplot_barchart.png)
+
+* In order to observe the distribution of female or male mice in the study, I generated pie plots that displayed the percentage of each sex out of the total 249 mice within the study.
+
+  * This was accomplished using both Pandas's `DataFrame.plot()` method:
+
+  ![PandasPie](Images/pandas_piechart.png)
+
+  * And subsequently repeated using Matplotlib's `pyplot` method: 
+
+  ![PyPlotPie](Images/pyplot_piechart.png)
 
 * Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
 
