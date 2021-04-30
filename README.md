@@ -10,11 +10,25 @@ Programming dependencies and languages used within this repository: Pandas, Matp
 
 ## Data Visualization Procedure
 
-* It is important to understand factors within a research study that may skew the results or interpretation of the data, such as duplicates within the dataset. Prior to creating any of the tables or figures for the technical report of the study, I checked the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID.
+* It is important to understand factors within a research study that may skew the results or interpretation of the data, such as duplicates within the dataset. Prior to creating any of the tables or figures for the technical report of the study, I checked the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID. There was only one ID that was duplicated within the dataset (`Mouse ID g989`), and once removed the dataset was reduced by 13 entries.
 
-* Use the cleaned data for the remaining steps.
+* Original Dataframe:
 
-* Generate a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
+![Original](Images/original_df.png)
+
+* Reduced Dataframe:
+
+![Reduced](Images/duplicate_drop_df.png)
+
+* For an initial statstical overview, I generated a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
+
+  * I generated a summary statistics table using Pandas' .groupby() method:
+
+  ![groupby](Images/groupby_summary_stats.png)
+
+  * And recreated the same summary statistics table using Matplotlib's .aggregate() method:
+
+  ![agg](Images/agg_summary_stats.png)
 
 * Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the total number of measurements taken for each treatment regimen throughout the course of the study.
 
