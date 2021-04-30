@@ -70,13 +70,32 @@ Programming dependencies and languages used within this repository: Pandas, Matp
 
 ![Boxplot](Images/tumor_boxplot.png)
 
-* Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.
+### Capomulin Treatment Time Points
 
-* Generate a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen.
+* Given that Capomulin appeared to have a greater effect at reducing the final tumor volume in the box plots, I selected a mouse that was treated with Capomulin (`Mouse Female s185`) and generated a line plot of tumor volume vs. time point for that mouse.
 
-* Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
+![linechart](Images/capomulin_linechart.png)
 
-* Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+### Mouse Weight vs. Tumor Volume
+
+* In order to visualize any potential correlations between the tumor volume and mouse weight, I generate a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen.
+
+![Scatter](Images/capomulin_scatter.png)
+
+### Capomulin Treatment Linear Regression Model
+
+* To take the previous visualization one step further, I calculated the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment, to see if there is an actual statistical relationship between the two factors. 
+
+  * The linear regression model and correlation coefficient are overlayed over the previous scatter plot:
+
+  ![LinearRegress](Images/capomulin_line_regress.png)
+
+
+### Final Written Assessment
+
+Once overlooking all the visualization tables and figures, I generated a written overview summary of some interpretations that can be deduced from the analyzed dataset. This written assessment is also located at the beginning of the Jupyter Notebook.
+
+![Assessment](Images/summary_writeup.png)
 
 ### Copyright
 
