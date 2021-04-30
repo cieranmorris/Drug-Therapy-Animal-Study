@@ -5,6 +5,8 @@
 In this theoretical project application, I assumed the role as a data analyst for Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
 In Pymaceuticals Inc. most recent animal study, 249 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. For this assessment, I generated all of the tables and figures needed for the technical report of the study, along with an overview summary of the study results at the beginning of the Jupyter Notebook.
+
+Programming dependencies and languages used within this repository: Pandas, Matplotlib, and Jupyter Notebook.
 ## Instructions
 
 Your tasks are to do the following:
@@ -36,12 +38,6 @@ Your tasks are to do the following:
 * Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
 
 * Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
-
-Here are some final considerations:
-
-* You must use proper labeling of your plots, to include properties such as: plot titles, axis labels, legend labels, _x_-axis and _y_-axis limits, etc.
-
-* See the [starter workbook](Pymaceuticals/pymaceuticals_starter.ipynb) for help on what modules to import and expected format of the notebook.
 
 ### Copyright
 
