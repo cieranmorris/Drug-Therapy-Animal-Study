@@ -7,11 +7,10 @@ In this theoretical project application, I assumed the role as a data analyst fo
 In Pymaceuticals Inc. most recent animal study, 249 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. For this assessment, I generated all of the tables and figures needed for the technical report of the study, along with an overview summary of the study results at the beginning of the Jupyter Notebook.
 
 Programming dependencies and languages used within this repository: Pandas, Matplotlib, and Jupyter Notebook.
-## Instructions
 
-Your tasks are to do the following:
+## Data Visualization Procedure
 
-* Before beginning the analysis, check the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID.
+* It is important to understand factors within a research study that may skew the results or interpretation of the data, such as duplicates within the dataset. Prior to creating any of the tables or figures for the technical report of the study, I checked the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID.
 
 * Use the cleaned data for the remaining steps.
 
